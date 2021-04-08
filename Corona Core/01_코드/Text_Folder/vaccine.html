@@ -14,12 +14,18 @@
 
 details > summary {
   padding: 2px 6px;
-  width: 51em;
-  background-color: #2d2d2d;
-  color:white;
-  border: none;
+  width: 50em;
+  background-color: #424242;
   box-shadow: 3px 3px 4px gray;
   cursor: pointer;
+  color:white;
+}
+
+details > summary > div {
+  font-weight: 400;
+  background-color: #f5f5f5;
+  color:black;
+  padding:2px;
 }
 
 p{
@@ -29,11 +35,16 @@ p{
 .black_bold{
 	font-family:'KoPub Batang';
 	font-weight: 600;
+	color:blue;
 }
 .bold{
 	font-family:'KoPub Batang';
 	font-weight: 600;
 	color:red;
+}
+
+.float{
+	float:right;
 }
 </style>
 </head>
@@ -90,12 +101,11 @@ p{
     	<h3 style="text-align:center"> 코로나 백신 </h3>
 		
 		<p> 백신의 기본적인 기전과 현재 국내외에 유통중인 코로나 백신들을 소개합니다.</p>
-
 		<!-- 01. 백신과 면역 상식 -->
 		<hr>
-    	<details><summary> 1_백신 작용 원리 </summary><br>
-		<h3 class="center"> 백신 작용 원리 </h3><br>
-		<p> COVID-19 백신의 원리를 알기 위해선 먼저 인체가 질병과 싸우는 방식을 알아야 합니다. COVID-19 유발 바이러스와 같은 세균은 우리 몸에 들어와 우리를 공격하고 증식합니다. '감염'이라고 불리우는 이 침입 과정은 질병을 유발합니다. 우리 면역 체계는 감염과 싸우기 위해 여러 도구를 사용합니다. 혈액에는 조직과 기관에 산소를 운반하는 <span class="black_bold">적혈구</span>, 그리고 감염원과 싸우는 <span class="bold">백혈구</span> 즉 면역 세포가 있습니다. 다양한 유형의 백혈구가 다양한 방식으로 감염과 싸웁니다.</p>
+    	<details><summary> 1_백신의 원리 <br><br><div><br>인체가 질병과 맞서는 방법과 COVID-19 백신의 원리를 이해합니다.<br><br></div></summary><br>
+		<h3 class="center"> 백신의 원리 </h3><br>
+		<p>  COVID-19 유발 바이러스와 같은 세균은 우리 몸에 들어와 우리를 공격하고 증식합니다. '감염'이라고 불리우는 이 침입 과정은 질병을 유발합니다. 우리 면역 체계는 감염과 싸우기 위해 여러 도구를 사용합니다. 혈액에는 조직과 기관에 산소를 운반하는 <span class="black_bold">적혈구</span>, 그리고 감염원과 싸우는 <span class="bold">백혈구</span> 즉 면역 세포가 있습니다. 다양한 유형의 백혈구가 다양한 방식으로 감염과 싸웁니다.</p>
 		<p><span class="bold">대식세포</span>는 세균 또는 죽거나 죽어가는 세포를 먹고 소화하는 백혈구입니다. 대식세포는 '항원'이라고 하는 침입 세균의 일부를 남겨둡니다. 신체는 항원을 위험한 것이라고 판단하고 항체를 자극하여 항원을 공격합니다.</p>
 		<p><span class="bold">B 림프구</span>는 방어 백혈구입니다. B 림프구는 대식세포가 남긴 바이러스 조각을 공격하는 항체를 생산합니다.</p>
 
@@ -110,11 +120,11 @@ p{
 		</details>
 
 
+
 		<!-- 01. 백신 유형 -->
-		<hr>
-		<details><summary> 2_백신 유형 </summary>
-		<br><h3 class="center">백신 유형</h3><br>
-		<p>현재 미국에서 승인 및 권장하거나 대규모 임상 시험(3상) 중인 COVID-19 백신은 세 가지 주요 유형이 있습니다. 아래는 각 유형별로 백신이 우리 몸에서 COVID-19 유발 바이러스를 인식하고 보호 기능을 만들도록 유도하는 방법에 대한 설명입니다. 이러한 백신으로 인해 COVID-19에 걸리는 일은 없습니다.</p>
+		<br>
+		<details><summary> 2_백신의 유형<br><br><div><br>백신의 유형별 작동 방식입니다.<br><br></div></summary><br>
+		<br><h3 class="center">백신의 유형</h3><br>
 		
 		<h3>a. mRNA 유형</h3>
 		<p>mRNA 백신에는 바이러스 고유의 무해 단백질 생성법에 대한 지침을 세포에 제공하는 COVID-19 유발 바이러스 물질이 포함되어 있습니다. 우리 세포가 이 단백질을 복제하고 나면, 이들이 백신에서 유전 물질을 파괴합니다. 우리 몸은 그 단백질이 존재해서는 안된다는 것을 인식하고 향후 감염될 경우 COVID-19 유발 바이러스와 싸우는 방법을 기억하는 T 림프구와 B 림프구를 만듭니다.
@@ -126,7 +136,7 @@ p{
 		<h3>c. 벡터 유형</h3>
 		<p>벡터 백신에는 COVID-19 유발 바이러스와는 다른, 바이러스의 변형본이 들어 있습니다. 변형 바이러스 껍질 속에는 COVID-19를 일으키는 바이러스의 물질이 들어 있습니다. 이것을 '바이러스 벡터'라고 합니다. 바이러스 벡터가 세포 내부에 들어가면 COVID-19 유발 바이러스에 해당하는 특별 단백질을 만들도록 유전 물질에 지시합니다. 이 지침을 사용하여 세포는 해당 단백질의 사본을 만듭니다. 이는 나중에 감염될 경우 그 바이러스와 싸우는 방법을 기억할 T 림프구와 B 림프구를 만들도록 유도합니다.
 		<!-- https://korean.cdc.gov/coronavirus/2019-ncov/vaccines/different-vaccines/viralvector.html --></p>
-
+		<hr><br>
 		<h3 class="center"> 접종 횟수</h3>
 		<p>일부 COVID-19 백신은 한 번 이상 접종 필요</p>
 		<p>일부 COVID-19 백신은 두 번 접종해야 백신 접종을 완전히 완료할 수 있습니다.</p>
@@ -136,50 +146,68 @@ p{
 		</details>
 
 
+
 		<!-- 3 백신 종류 -->
-		<hr>
-		<details><summary> 3_백신 종류 </summary>
+		<br>
+		<details><summary> 3_백신의 종류 <br><br><div><br>백신의 종류별 명칭 & 접종 방법입니다.<br><br></div></summary><br>
+		<br><h3 class="center">백신의 종류</h3><br>
+		<div class="float">
+			<img src="../../02_이미지/백신_화이자.jpg" alt="화이자" width="180px" height="180px">
+		</div>
+		<h4>(1) 화이자</h4>
 		
-		<hr><br>
-		<h3 class="center"> 백신_종류 </h3><br>
-		<h4>(1) 화이자</h4><p>
+		<p>
 		이름: BNT162b2<br>
 		제조사: Pfizer, Inc., 및 BioNTech<br>
 		백신 유형: mRNA<br>
 		접종횟수: 2회 접종, 21일 간격으로 접종<br>
-		투여 방법: 상완 근육에 주사<br>
+		투여 방법: 상완 근육에 주사<br><br><br>
 
 			<!-- https://korean.cdc.gov/coronavirus/2019-ncov/vaccines/different-vaccines/Pfizer-BioNTech.html -->
 		</p>
-
-		<hr>
+		<br>
+		<hr><br>
+		<div class="float">
+			<img src="../../02_이미지/백신_얀센.jpg" alt="얀센" width="180px" height="180px">
+		</div>
 		<h4>(2) 존슨 앤 존슨 얀센</h4><p>
 		제품명: JNJ-78436735<br>
 		제조사: 존슨앤존슨 얀센제약<br>
 		백신 유형: 바이러스 벡터<br>
 		접종 횟수: 1회<br>
-		투여 방법: 상완 근육에 주사<br>
+		투여 방법: 상완 근육에 주사<br><br><br>
 
 		<!-- https://korean.cdc.gov/coronavirus/2019-ncov/vaccines/different-vaccines/janssen.html -->
 		</p>
+		<br>
 		
-		<hr>
+		
+		<hr><br>
+		<div class="float">
+			<img src="../../02_이미지/백신_모더나.jpg" alt="모더나" width="180px" height="180px">
+		</div>
 		<h4>(3) 모더나</h4><p>
 		제품명: mRNA-1273<br>
 		제조사: ModernaTX, Inc.<br>
 		백신 유형: mRNA<br>
 		접종 횟수: 한 달(28일) 간격으로 2회 접종<br>
-		투여 방법: 상완 근육에 주사<br>
+		투여 방법: 상완 근육에 주사<br><br><br>
 
 			<!-- https://korean.cdc.gov/coronavirus/2019-ncov/vaccines/different-vaccines/Moderna.html -->
-		</p>
-
-		<hr>
-		<h4>(4) 아스트라제네카</h4><p>
-		아스트라제네카(AstraZeneca)는 과학을 기반으로 한 기업문화와 비전을 가진 스웨덴의 ‘아스트라 AB(AstraAB)’와 영국의 ‘제네카(Zeneca Group PLC)’의 인수 합병을 통해 설립된 다국적 제약회사이다.<br><br>
-
-		제품명 : 한국아스트라제네카코비드-19백신주(사스코로나바이러스-2 바이러스벡터백신)<br>
-		성상	무색 내지 미황색의, 투명하거나 약간 불투명한 용액이 무색 투명한 바이알에 충전된 주사제로 육안으로 관찰 시 입자가 보이지 않는다.<br>
+		</p><br>
+		
+		<hr><br>
+		<div class="float">
+			<img src="../../02_이미지/백신_아스트라제네카.jpg" alt="아스트라제네카" width="180px" height="180px">
+		</div>
+		<h4>(4) 아스트라제네카</h4>
+		<div style="width: 560px">
+			<p> 
+				제품명 : 한국아스트라제네카코비드-19백신주(사스코로나바이러스-2 바이러스벡터백신)<br>
+				성상	무색 내지 미황색의, 투명하거나 약간 불투명한 용액이 무색 투명한 바이알에 충전된 주사제로 육안으로 관찰 시 입자가 보이지 않는다.<br>
+			</p>
+		</div>
+		<p>
 		업체명 : 한국아스트라제네카(주)<br>
 		위탁제조업체 : 에스케이바이오사이언스(주)<br>
 		전문/일반 : 전문의약품<br>
@@ -196,11 +224,11 @@ p{
 		- 동일한 주사기로 다른 백신 또는 약물과 혼합해서 사용해서는 안 된다.<br>
 		- 투여 관련 주의사항은 사용상의 주의사항, ‘10. 적용상의 주의사항’을 참조한다.<br>
 		<!-- https://ko.wikipedia.org/wiki/%EC%95%84%EC%8A%A4%ED%8A%B8%EB%9D%BC%EC%A0%9C%EB%84%A4%EC%B9%B4 -->
-		</p>
+		</p><br><br><br>
 		</details>
 		<hr>
-	</div>
-</div>
+	</div> <!-- contents  종료 -->
+</div> <!-- mid  종료 -->
 
 <!--다른 summary를 열었을 때 기존에 열었던 summary 닫기-->
 <script type="text/javascript">
