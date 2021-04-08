@@ -1,4 +1,5 @@
 2021 DKU 캡스톤 깃헙
+<<<<<<< HEAD
 
 TO_DO list
 
