@@ -140,10 +140,13 @@ a span:nth-child(1){
 	padding: 20px;
 	min-height : 600px;
 	border : 1px solid gray;
-    
 	}
 
 	/*텍스트 중앙으로*/
-.center{
-	text-align:center;
-}
+	.center{
+		text-align:center;
+	}
+	/*디폴트 줌 크기 설정*/
+	#zoom{
+		zoom:100%
+	}
