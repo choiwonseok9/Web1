@@ -10,9 +10,9 @@
 	<style> 
     /*확진자 동선 링크 버튼*/
     #btn_group button{ 
-        border: 1px solid skyblue; 
+        border: 1px solid black; 
         background-color: rgba(0,0,0,0); 
-        color: skyblue; 
+        color: black; 
         margin-bottom : 10px;
         padding: 20px; 
         border-radius:10px;
@@ -22,7 +22,7 @@
     /*링크 hover*/
     #btn_group button:hover{ 
     color:white;
-    background-color:skyblue;
+    background-color:gray;
     cursor: pointer;
     }
 	</style>
@@ -75,7 +75,23 @@
     <hr>
 	<!-- 컨텐츠 박스 -->
 	<div class="contents">
-    	<h3 style="text-align:center"> 지자체별 확진자 동선 정보</h3>
+
+    	<br><h3 style="text-align:center"> 지자체별 확진자 동선 정보</h3><br>
+    	<hr>
+		<br>
+			<p>
+			지자체별 확진자 동선 정보를 제공합니다. <br>
+			각 링크를 클릭하면 해당 지자체 사이트에서 정보를 조회할 수 있습니다.<br><br>
+			</p>
+		<span style="text-align : center"> * 주의사항</span>
+		<br>
+		<p>
+		- 공개 기간이(14일) 경과되면 장소 등 공개내용을 삭제함<br>
+		- 확진환자의 거주지(읍면동 단위 이하) 및 성별, 연령, 직장명 등 개인정보는 공개하지 않음<br>
+		- 해당 공간 내 모든 접촉자가 파악된 경우 공개하지 않음<br>
+		</p>
+    	<hr>
+
 	    <p>
             <div id="btn_group"> 
                 <button id="test_btn1" onclick="window.open('https://www.seoul.go.kr/coronaV/coronaStatus.do')">서울</button> 
@@ -96,8 +112,6 @@
                 <button id="test_btn16" onclick="window.open('http://xn--19-q81ii1knc140d892b.kr/main/main.do#close')">경남</button> 
                 <button id="test_btn17" onclick="window.open('https://www.jeju.go.kr/wel/healthCare/corona/coronaNotice.htm')">제주</button> 
             </div>
-
-
 	  	</p>
 	</div>
 </div>
