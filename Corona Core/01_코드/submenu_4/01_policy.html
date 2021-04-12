@@ -6,7 +6,35 @@
 	<meta name="author" content="tlwns5598@gmail.com" /> 
 	<title>Corona Core</title> 
 	<link rel="stylesheet" href="../style.css">
-	
+	<style>
+    details {
+  font: 14px "KoPub Batang", Calibri, sans-serif;
+}
+
+details{
+	font-weight:600;
+}
+details > summary {
+  padding: 2px 6px;
+  width: 52em;
+  background-color: #424242;
+  box-shadow: 3px 3px 4px gray;
+  cursor: pointer;
+  color:white;
+}
+
+details > summary > div {
+  font-weight: 400;
+  background-color: #f5f5f5;
+  color:black;
+  padding:2px;
+}
+
+p{
+	color:#3D3D3D;
+	line-height: 170%;
+}
+</style>
 </head>
 <body>
 
@@ -57,12 +85,49 @@
 	<!-- 컨텐츠 박스 -->
 	<div class="contents">
     	<h3 style="text-align:center"> 사회적 거리두기 정책</h3>
-	    <p>
-	      <br>
-		  1234
-	  	</p>
+
+		<details><summary> 1단계<br><br><div><br>생활 속 거리 두기<br><br></div></summary><br>
+		<div class="center"><br><h3 class="center">1단계 - 생활 속 거리 두기</h3>
+		<hr><img src="../../02_이미지/거리두기/1단계.jpg" width="700"></div><br><br>
+		<br></details><br>
+
+		<details><summary> 1.5단계<br><br><div><br>지역적 유행 개시<br><br></div></summary><br>
+		<div class="center"><br><h3 class="center">1.5단계 - 지역적 유행 개시</h3>
+		<hr><img src="../../02_이미지/거리두기/1.5단계.jpg" width="700"></div><br><br>
+		<br></details><br>
+
+		<details><summary> 2단계<br><br><div><br>지역 유행 급속 전파, 전국적 확산 개시<br><br></div></summary><br>
+		<div class="center"><br><h3 class="center">2단계 - 지역 유행 급속 전파, 전국적 확산 개시</h3>
+		<hr><img src="../../02_이미지/거리두기/2단계.jpg" width="700"></div><br><br>
+		<br></details><br>
+
+		<details><summary> 2.5단계<br><br><div><br>전국적 유행 본격화<br><br></div></summary><br>
+		<div class="center"><br><h3 class="center">2.5단계 - 전국적 유행 본격화</h3>
+		<hr><img src="../../02_이미지/거리두기/2.5단계.jpg" width="700"></div><br><br>
+		<br></details><br>
+
+		<details><summary> 3단계<br><br><div><br>전국적 대유행<br><br></div></summary><br>
+		<div class="center"><br><h3 class="center">3단계 - 전국적 대유행</h3>
+		<hr><img src="../../02_이미지/거리두기/3단계.jpg" width="700"></div><br><br>
+		<br></details><br>
 	</div>
 </div>
+<!--다른 summary를 열었을 때 기존에 열었던 summary 닫기-->
+<script type="text/javascript">
+    // Fetch all the details element.
+	const details = document.querySelectorAll("details");
+	// Add the onclick listeners.
+	details.forEach((targetDetail) => {
+	  targetDetail.addEventListener("click", () => {
+	    // Close all the details that are not targetDetail.
+	    details.forEach((detail) => {
+	      if (detail !== targetDetail) {
+	        detail.removeAttribute("open");
+	      }
+	    });
+	  });
+	});
+    </script>
 </body> 
 </html>
 

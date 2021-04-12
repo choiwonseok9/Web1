@@ -3,8 +3,9 @@
 ---------
 
 <폴더&파일 설명>
+
 - 폴더 -
-iframe : IFRAME 태그 연습 폴더
+iframe : IFRAME 태그 연습 사용하는 폴더
 submenu : 이용 안내
 Text_Folder : 방역 정보
 Text_Folder2 : 정부 정책
