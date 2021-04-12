@@ -10,13 +10,14 @@ a span:nth-child(1){
     color : #e43f55;
 }
 
-b{ 
+.font1{ 
     font-family: "Times New Roman", Serif;
     text-align: center;
-    font-size: 10px;
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 30px;
     margin-top: 0px;
     margin-bottom: 0px;
-
 }
 
 /* 기존 html style*/	
