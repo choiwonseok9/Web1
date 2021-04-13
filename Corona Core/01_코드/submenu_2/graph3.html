@@ -6,7 +6,7 @@
 	<meta name="author" content="tlwns5598@gmail.com" /> 
 	<title>Corona Core</title> 
 	<link rel="stylesheet" href="../style.css">
-
+	<link rel="stylesheet" href="graph_style.css">
 </head>
 <body id="zoom">
 	<a href="../index.html"style="text-decoration:none;color:black;">
@@ -56,26 +56,27 @@
     <hr>
 
 	<!-- 컨텐츠 박스 -->
-	<div class="contents">
-		<br><br>
+	<div class="contents" id="outer_contents">
     	<h3 style="text-align:center"> 지역별 확진자 비교 통계 </h3>
 	    <p>
-	     특정 지역의 감염 양상을 보여줍니다.
-		지역별 관리 실태와 방역의 원활한지 정도를 파악할 수 있습니다.
-		사용자는 전체 조회 기간과 상세 조회 단위를 선택할 수 있습니다.
+	    특정 지역의 감염 양상을 보여줍니다.<br>
+		지역별 관리 실태 + 해당 지역의 방역이 원활하게 진행되고 있는지 정도를 파악할 수 있습니다.<br>
 	  	</p>
-	  	<p>
-	  		사용방법<br>
-	  		1. 첫번째 비교할 지역을 선택하고 '도시 추가하기를 눌러주세요'<br>
-	  		2. 다른 비교하고 싶은 지역을 추가로 입력해 주세요 (복수 입력 가능)<br>
-	  		3. 시작할 연-월-일을 지정하고 여기부터 조회할 기간을 설정해 주세요.<br>
-	  		4. 입력버튼을 눌러 주세요.<br>
-	  	</p>
+	  	<div id="inside_contents">
+	  	
+			<div class="center"><br><b>사용방법</b></div>
+	  		<p style="padding-left: 10px">
+	  		1. 비교할 지역을 선택하고 '도시 추가하기'를 눌러주세요'<br>
+	  		2. (1)과 같이 비교할 지역을 원하는 만큼 추가해 주세요<br>
+	  		3. 데이터 조회의 시작점이 될 [연-월-일]을 지정해 주세요<br>
+	  		4. 조회할 기간을 설정하고 입력 버튼을 눌러주세요.<br>
+	  		</p>
+	  	</div>
+	  	<br>
+	  	<div id="for_ifrmae">
 		<iframe src="https://khw970421.github.io/covid/Modify_Danfo/Compare_City2.html"
 		width=750 height=700></iframe>
-	  	
-
-
+		</div>
 	</div>
 </div>
 </body> 

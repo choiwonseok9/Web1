@@ -6,7 +6,7 @@
 	<meta name="author" content="tlwns5598@gmail.com" /> 
 	<title>Corona Core</title> 
 	<link rel="stylesheet" href="../style.css">
-
+	<link rel="stylesheet" href="graph_style.css">
 </head>
 <body id="zoom">
 	<a href="../index.html"style="text-decoration:none;color:black;">
@@ -56,21 +56,26 @@
     <hr>
 
 	<!-- 컨텐츠 박스 -->
-	<div class="contents">
-		<br><br>
-    	<h3 style="text-align:center"> 지역별 확진자 증가 추세 </h3><br>
-    	<p>
-    		특정 일자의 지역 별 감염 증감을 보여줍니다<br><br>
-			
-			원형 그래프는 지역별 관리 현황을 파악하고<br>
-			=> 지역별 방역 관리 적절성 파악 - % 단위<br><br>
+	<div class="contents" id="outer_contents">
+		
+    	<h3 style="text-align:center"> 지역별 확진자 증가 추세 </h3>
 
-			막대 그래프는 지역별 확진자 수치를 확인할 수 있습니다 <br>
-			=> 명확한 수치 확인 <br><br>
-    	</p>
+    	<br>특정 일자의 지역 별 감염 증감을 보여줍니다<br><br>
+    	<div id="inside_contents">
+				<div class="center"><br><b>사용방법</b></div>
+			<p style="padding:5px" >
+				1. 조회할 날짜를 입력해 주세요<br>
+				2. 출력시킬 차트를 선택해 주세요.<br>
+				3. 조회한 기록은 csv 파일로 다운로드할 수 있습니다.<br><br>
+
+				* 원형 차트 : 지역별 관리 현황과 적절성을 파악할 수 있습니다.<br>
+				* 라인 차트 : 정확한 지역별 확진자 수치를 확인할 수 있습니다<br>
+	    	</p>
+	    </div>
     	<p>
 			<iframe src="https://khw970421.github.io/covid/Modify_Danfo/Pi_Chart_Bar_Chart.html"
-			width=700 height=1500></iframe>
+			id="graph_iframe"
+			width=730 height=1500></iframe>
       	</p>
 	</div>
 </div>

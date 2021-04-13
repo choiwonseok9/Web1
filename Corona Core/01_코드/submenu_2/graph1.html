@@ -6,7 +6,7 @@
 	<meta name="author" content="tlwns5598@gmail.com" /> 
 	<title>Corona Core</title> 
 	<link rel="stylesheet" href="../style.css">
-
+	<link rel="stylesheet" href="graph_style.css">
 </head>
 <body id="zoom">
 	<a href="../index.html"style="text-decoration:none;color:black;">
@@ -56,17 +56,24 @@
     <hr>
 
 	<!-- 컨텐츠 박스 -->
-	<div class="contents">
-		<br><br>
+	<div class="contents" id="outer_contents">
     	<h3 style="text-align:center"> 국내 누적 확진자 통계 </h3>
-	    <p>
-	      	<p>
-	      		기존 플랫폼의 확진자 현황 그래프를 기간별로 조회할 수 있게 수정해 보여줍니다.<br>
-				특정 기간의 감염과 당시 사회 이슈를 비교해 보세요<br><br>
+		<br>기존 플랫폼의 확진자 현황 그래프를 기간별로 조회할 수 있습니다.<br>
+		특정 기간의 감염 양상을 당시 사회 이슈와 비교해 보세요<br><br>
+		<div id="inside_contents">
+			<div class="center"><br><b>사용방법</b></div>
+			<p style="padding-left: 10px">
+			1. 출력할 차트를 선택해 주세요.<br>
+			2. 조회한 기록은 csv 파일로 다운로드할 수 있습니다.<br>
+			</p>
+		</div>
+			<br>
+		<div id="graph_iframe">
 			<iframe src="https://khw970421.github.io/covid/Modify_Danfo/Daily_Total_Increase_Modify2.html"
-			width=700 height=1500></iframe>
-	      	</p>
-	  	</p>
+				width=730 
+				height=1150>
+			</iframe>
+		</div>
 	</div>
 </div>
 </body> 
