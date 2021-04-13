@@ -35,6 +35,10 @@ p{
 	line-height: 170%;
 }
 </style>
+
+<script>
+	var clk="0";
+</script>
 </head>
 <body  id="zoom">
 
@@ -85,6 +89,15 @@ p{
 	<!-- 컨텐츠 박스 -->
 	<div class="contents">
     	<h3 style="text-align:center"> 사회적 거리두기 정책</h3>
+    	<br>사회적 거리두기 단계를 확인할 수 있습니다. 자세히 보려면 이미지를 클릭하십시오<br><br>
+		<div class="center">
+	    	<img src="../../02_이미지/거리두기/distance_policy.png" 
+			width="730" 
+			style="border:solid 2px"
+			onclick="img_click(event)"
+			></img>
+			<br><br>
+		</div>
 
 		<details><summary> 1단계<br><br><div><br>생활 속 거리 두기<br><br></div></summary><br>
 		<div class="center"><br><h3 class="center">1단계 - 생활 속 거리 두기</h3>
@@ -128,6 +141,39 @@ p{
 	  });
 	});
     </script>
+    <script>
+    // function zoomIn(event) {
+    //   event.target.style.width = "1000px";
+    //   event.target.style.height = "700px";
+    //   event.target.style.transition = "all 0.5s";
+    // }
+
+    // function zoomOut(event) {
+    //   event.target.style.width = "700px";
+    //   event.target.style.height = "400px";
+    //   event.target.style.transition = "all 0.5s";
+    // }
+
+	function img_click(event) {
+		// 첫번째 클릭 시 확대
+		if(clk==0){
+			clk=1;
+			event.target.style.transform = "scale(1.5)";
+			event.target.style.zIndex = 1;
+			event.target.style.transition = "all 0.3s";
+		}
+		// 두번째 클릭 시 축소
+		else if (clk==1){
+			clk=0;
+			event.target.style.transform = "scale(1)";
+			event.target.style.zIndex = 0;
+			event.target.style.transition = "all 0.3s";
+		}
+		else{
+			alert("err!")
+		}
+	}
+  </script>
 </body> 
 </html>
 

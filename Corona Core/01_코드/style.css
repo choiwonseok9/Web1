@@ -21,6 +21,14 @@ a span:nth-child(1){
 }
 
 /* 기존 html style*/	
+
+	/*드래그 영역 하이라이트*/
+	::selection {
+	   background: #fff176;
+	   color: blue;
+	   font-weight: 1000;
+	}
+
     html{ 
 	width:100%; 
 	height: 100%; 
