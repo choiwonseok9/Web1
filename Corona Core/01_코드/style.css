@@ -54,7 +54,7 @@ a span:nth-child(1){
 
 	/*메인 메뉴*/
 	#topMenu { 
-	height: 10px; /*topMenu의 높이를 30px로 설정(제대로 설정 안하면 아래 내용이 깨짐*/
+	height: 15px; /*topMenu의 높이를 30px로 설정(제대로 설정 안하면 아래 내용이 깨짐*/
 	width: 900px; /*topMenu의 넓이를 850px로 설정(제대로 설정 안하면 브라우져 넓이가 좁아지면 깨짐*/
 	position : relative;
 	top:3%;
@@ -73,7 +73,7 @@ a span:nth-child(1){
 	color: white; /* 글씨 색을 흰색으로 설정 */ 
 	background-color: #2d2d2d; /* 배경 색을 RGB(2D2D2D)로 설정 */ 
 	float: left; /* 왼쪽으로 나열되도록 설정 */ 
-	line-height: 40px; /* 텍스트 한 줄의 높이를 30px로 설정 */ 
+	line-height: 35px; /* 텍스트 한 줄의 높이를 30px로 설정 */ 
 	vertical-align: middle; /* 세로 정렬을 가운데로 설정 */ 
 	text-align: center; /* 텍스트를 가운데로 정렬 */ 
 	position: relative; /* 해당 li 태그 내부의 top/left 포지션 초기화 */ 
@@ -162,10 +162,19 @@ a span:nth-child(1){
 	/* footer CSS*/
 	.footer{
 		padding:10px;
+		text-align:center;
 	}
-	.footer_box{
+	.footer_mid{
+		background-color:#eeeeee;
+		border:1px solid;
+		padding:25px;
+	}
+	.footer_inside{
+		padding:10px;
 		border:1px gray solid;
+		background-color: white;
 	}
+
 
 	.menu_description{
 		border:solid black 1px;
@@ -198,6 +207,7 @@ a span:nth-child(1){
 	padding:10px;
 	margin:10px;
 }
+
 #black_box{
 	background-color:#4F4F4F;
 	color:white;
@@ -209,7 +219,7 @@ a span:nth-child(1){
 #white_box{
 	background-color:white;
 	border:1px solid;
-	margin:16px;
+	margin:15px;
 	padding : 10px;
 	color:black;
 	text-align:left;
