@@ -159,3 +159,10 @@ a span:nth-child(1){
 	#zoom{
 		zoom:100%
 	}
+	/* footer CSS*/
+	.footer{
+		padding:10px;
+	}
+	.footer_box{
+		border:1px gray solid;
+	}
