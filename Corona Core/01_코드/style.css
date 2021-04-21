@@ -38,7 +38,7 @@ a span:nth-child(1){
 	body { 
 	width:100%; 
 	min-height: 1000px; 
-	width:800px; 
+	width:850px; 
 	background-color: white; 
 	margin:0 auto;
 	}
@@ -55,9 +55,10 @@ a span:nth-child(1){
 	/*메인 메뉴*/
 	#topMenu { 
 	height: 10px; /*topMenu의 높이를 30px로 설정(제대로 설정 안하면 아래 내용이 깨짐*/
-	width: 850px; /*topMenu의 넓이를 850px로 설정(제대로 설정 안하면 브라우져 넓이가 좁아지면 깨짐*/
+	width: 900px; /*topMenu의 넓이를 850px로 설정(제대로 설정 안하면 브라우져 넓이가 좁아지면 깨짐*/
 	position : relative;
-	left :4%;
+	top:3%;
+	left : 3%;
 	} 
 	
 	/* 메인 메뉴 내부 ul 설정: 상위메뉴의 ul+하위 메뉴의 ul */ 
@@ -72,7 +73,7 @@ a span:nth-child(1){
 	color: white; /* 글씨 색을 흰색으로 설정 */ 
 	background-color: #2d2d2d; /* 배경 색을 RGB(2D2D2D)로 설정 */ 
 	float: left; /* 왼쪽으로 나열되도록 설정 */ 
-	line-height: 30px; /* 텍스트 한 줄의 높이를 30px로 설정 */ 
+	line-height: 40px; /* 텍스트 한 줄의 높이를 30px로 설정 */ 
 	vertical-align: middle; /* 세로 정렬을 가운데로 설정 */ 
 	text-align: center; /* 텍스트를 가운데로 정렬 */ 
 	position: relative; /* 해당 li 태그 내부의 top/left 포지션 초기화 */ 
@@ -82,8 +83,8 @@ a span:nth-child(1){
 	.menuLink, .submenuLink { 
 	text-decoration:none; /* a 태그의 꾸밈 효과 제거 */ 
 	display: block; /* a 태그의 클릭 범위를 넓힘 */ 
-	width: 180px; /* 기본 넓이를 150px로 설정 */ 
-	font-size: 12px; /* 폰트 사이즈 설정 */ 
+	width: 200px; /* 기본 넓이를 150px로 설정 */ 
+	font-size: 15px; /* 폰트 사이즈 설정 */ 
 	font-weight: bold; /* 폰트를 굵게 설정 */ 
 	font-family: "Trebuchet MS", Dotum; /* 기본 폰트를 영어/한글 순서대로 설정 */ 
 	} 
