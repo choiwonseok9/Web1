@@ -37,7 +37,7 @@ a span:nth-child(1){
 
 	body { 
 	width:100%; 
-	min-height: 1000px; 
+	height: 2000px;
 	width:850px; 
 	background-color: white; 
 	margin:0 auto;
