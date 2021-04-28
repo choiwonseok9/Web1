@@ -60,46 +60,56 @@
 	</div>
     <hr>
 	<!-- 컨텐츠 박스 -->
-	<div class="contents">
-    	<h3 style="text-align:center"> 사회적 거리두기 정책</h3>
-    	<br> 전체적인 <span style="color:red;">사회적 거리두기 정책</span>을 확인할 수 있습니다.
-    	<span style="font-weight: bold;">클릭 </span>시 이미지가 확대됩니다.
-    	<br><br>
-		<div class="center">
-	    	<img src="../../02_이미지/거리두기/distance_policy.png" 
-			width="730" 
-			style="border:solid 2px"
-			onclick="img_click(event)"
-			></img>
-			<br><br>
+		<div id="outer_contents">
+			<br><h3 style="text-align:center"> 사회적 거리두기 정책</h3>
+				<br>
+			    	<div id="inside_contents">
+			    		<div class="center"> <br><h3> 전체 <span style="color:red;">사회적 거리두기 정책</span></h3></div>
+				    	<br>
+				    	<div class="center">클릭 시 이미지가 확대됩니다</div>
+				    	<br>
+						<div class="center">
+					    	<img src="../../02_이미지/거리두기/distance_policy.png" 
+							width="730" 
+							style="border:solid 2px"
+							onclick="img_click(event)"
+							></img>
+							<br><br>
+						</div>
+					</div>
+					<br>
+			    	<div id="inside_contents">
+			    		<div class="center"> <br><h3> 단계별 <span style="color:red;"> 다중이용시설 관리 정책</span></h3></div>
+				    	<br>
+				    	<div class="center">클릭 시 박스가 펼쳐칩니다</div>
+				    	<br>
+						<details><summary> 1단계<br><br><div><br>생활 속 거리 두기<br><br></div></summary><br>
+						<div class="center"><br><h3 class="center">1단계 - 생활 속 거리 두기</h3>
+						<hr><img src="../../02_이미지/거리두기/1단계.jpg" width="700"></div><br><br>
+						<br></details><br>
+
+						<details><summary> 1.5단계<br><br><div><br>지역적 유행 개시<br><br></div></summary><br>
+						<div class="center"><br><h3 class="center">1.5단계 - 지역적 유행 개시</h3>
+						<hr><img src="../../02_이미지/거리두기/1.5단계.jpg" width="700"></div><br><br>
+						<br></details><br>
+
+						<details><summary> 2단계<br><br><div><br>지역 유행 급속 전파, 전국적 확산 개시<br><br></div></summary><br>
+						<div class="center"><br><h3 class="center">2단계 - 지역 유행 급속 전파, 전국적 확산 개시</h3>
+						<hr><img src="../../02_이미지/거리두기/2단계.jpg" width="700"></div><br><br>
+						<br></details><br>
+
+						<details><summary> 2.5단계<br><br><div><br>전국적 유행 본격화<br><br></div></summary><br>
+						<div class="center"><br><h3 class="center">2.5단계 - 전국적 유행 본격화</h3>
+						<hr><img src="../../02_이미지/거리두기/2.5단계.jpg" width="700"></div><br><br>
+						<br></details><br>
+
+						<details><summary> 3단계<br><br><div><br>전국적 대유행<br><br></div></summary><br>
+						<div class="center"><br><h3 class="center">3단계 - 전국적 대유행</h3>
+						<hr><img src="../../02_이미지/거리두기/3단계.jpg" width="700"></div><br><br>
+						<br></details><br>
+					</div>
+				</div>
 		</div>
-		<br>단계별로 <span style="color:red;">다중이용시설 관리 정책</span>을 확인할 수 있습니다.
-		<span style="font-weight: bold;">클릭 </span>시 박스가 펼쳐집니다.<br><br>
-		<details><summary> 1단계<br><br><div><br>생활 속 거리 두기<br><br></div></summary><br>
-		<div class="center"><br><h3 class="center">1단계 - 생활 속 거리 두기</h3>
-		<hr><img src="../../02_이미지/거리두기/1단계.jpg" width="700"></div><br><br>
-		<br></details><br>
-
-		<details><summary> 1.5단계<br><br><div><br>지역적 유행 개시<br><br></div></summary><br>
-		<div class="center"><br><h3 class="center">1.5단계 - 지역적 유행 개시</h3>
-		<hr><img src="../../02_이미지/거리두기/1.5단계.jpg" width="700"></div><br><br>
-		<br></details><br>
-
-		<details><summary> 2단계<br><br><div><br>지역 유행 급속 전파, 전국적 확산 개시<br><br></div></summary><br>
-		<div class="center"><br><h3 class="center">2단계 - 지역 유행 급속 전파, 전국적 확산 개시</h3>
-		<hr><img src="../../02_이미지/거리두기/2단계.jpg" width="700"></div><br><br>
-		<br></details><br>
-
-		<details><summary> 2.5단계<br><br><div><br>전국적 유행 본격화<br><br></div></summary><br>
-		<div class="center"><br><h3 class="center">2.5단계 - 전국적 유행 본격화</h3>
-		<hr><img src="../../02_이미지/거리두기/2.5단계.jpg" width="700"></div><br><br>
-		<br></details><br>
-
-		<details><summary> 3단계<br><br><div><br>전국적 대유행<br><br></div></summary><br>
-		<div class="center"><br><h3 class="center">3단계 - 전국적 대유행</h3>
-		<hr><img src="../../02_이미지/거리두기/3단계.jpg" width="700"></div><br><br>
-		<br></details><br>
-	</div>
 </div>
 <!--다른 summary를 열었을 때 기존에 열었던 summary 닫기-->
 <script type="text/javascript">
