@@ -11,7 +11,6 @@ Text_Folder : 방역 정보
 Text_Folder2 : 정부 정책
 graph_menu : 
 
-
 - 파일 - 
 mask.jpg :  마스크 사용 안내 이미지
 property.jpg : 공공 API 사용 시 이미지 추가하기
