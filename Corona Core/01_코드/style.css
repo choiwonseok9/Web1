@@ -233,3 +233,10 @@ a span:nth-child(1){
 .l_height{
 	line-height: 2;
 }
+
+
+.rounded {
+  background: rgb(63, 63, 63);
+  height: 50px; width: 200px;
+  border-radius: 10px;
+}
