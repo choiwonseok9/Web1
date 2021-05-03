@@ -39,11 +39,13 @@ print("해외 유입 확진자", ultra_fine_dust)
 #f.close()
 
 file = open('crawler/korea_corona.html', 'w')    # hello.txt 파일을 쓰기 모드(w)로 열기. 파일 객체 반환
-file.write('<div class="daydata">'+'<h1>'+'<p style ="color:rgb(255, 255, 255)">'+str(fine_dust)+'명</p></h1>'+'</div>')      # 파일에 문자열 저장
+
+file.write('<div class="daydata">'+'<h1>'+'<p style ="color:rgb(255, 255, 255)">'+str(fine_dust)+'</p></h1>'+'</div>')      # 파일에 문자열 저장
 file.close()
 
 file = open('crawler/world_corona.html', 'w')    # hello.txt 파일을 쓰기 모드(w)로 열기. 파일 객체 반환
-file.write('<div class="daydata">'+'<h1>'+'<p style ="color:rgb(255, 255, 255)">'+str(ultra_fine_dust)+'명</p></h1>'+'</div>')      # 파일에 문자열 저장
+file.write('<div class="daydata">'+'<h1>'+'<p style ="color:rgb(255, 255, 255)">'+str(ultra_fine_dust)+'</p></h1>'+'</div>')
+
 file.close()
 
 
