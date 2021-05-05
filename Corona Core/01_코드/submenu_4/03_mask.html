@@ -116,6 +116,25 @@
 		</div>
 	</div>
 </div>
+
+<!--다른 summary를 열었을 때 기존에 열었던 summary 닫기-->
+<script type="text/javascript">
+	        // Fetch all the details element.
+	const details = document.querySelectorAll("details");
+
+	// Add the onclick listeners.
+	details.forEach((targetDetail) => {
+	  targetDetail.addEventListener("click", () => {
+	    // Close all the details that are not targetDetail.
+	    details.forEach((detail) => {
+	      if (detail !== targetDetail) {
+	        detail.removeAttribute("open");
+	      }
+	    });
+	  });
+	});
+</script>
+    
 <div id="footer"></div>
 </body> 
 </html>
