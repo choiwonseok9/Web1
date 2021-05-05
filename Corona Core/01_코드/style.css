@@ -60,7 +60,7 @@ a span:nth-child(1){
 	/*메인 메뉴*/
 	#topMenu { 
 	height: 15px; /*topMenu의 높이를 30px로 설정(제대로 설정 안하면 아래 내용이 깨짐*/
-	width: 8510px; /*topMenu의 넓이를 850px로 설정(제대로 설정 안하면 브라우져 넓이가 좁아지면 깨짐*/
+	width: 850px; /*topMenu의 넓이를 850px로 설정(제대로 설정 안하면 브라우져 넓이가 좁아지면 깨짐*/
 	position : relative;
 	top:3%;
 	left : 1%;
