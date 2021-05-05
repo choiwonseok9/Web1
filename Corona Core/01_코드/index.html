@@ -6,10 +6,24 @@
 	<meta name="author" content="tlwns5598@gmail.com" />
 	<title>Corona Core</title>
 	<link rel="stylesheet" href="style.css">
+
+    <!-- Footer 부분 html 파일로 포함하기 위한 script-->
+    <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript">   
+        $(document).ready( function() {
+        $("#headers").load("test.html");
+        $("#footer").load("test.html");
+        });
+    </script>
+    <!-- 위치 : #footer 자리 -->
+    <!-- 내용 : #footer.html 내용 -->
 </head>
 
 
 <body>
+    <div id="headers"></div>
+    <div id="footers"></div>
+
 	<script>document.body.style.zoom="100%"</script>
 	<a href="index.html"style="text-decoration:none;color:black;">
 	<h2 class="main_title"> Corona Core </a></h2><br>
