@@ -40,7 +40,7 @@ a span:nth-child(1){
 
 	body { 
 	width:100%; 
-	height: 2000px;
+	height:2000px;
 	width:850px; 
 	background-color: white; 
 	margin:0 auto;
@@ -60,10 +60,12 @@ a span:nth-child(1){
 	/*메인 메뉴*/
 	#topMenu { 
 	height: 15px; /*topMenu의 높이를 30px로 설정(제대로 설정 안하면 아래 내용이 깨짐*/
-	width: 900px; /*topMenu의 넓이를 850px로 설정(제대로 설정 안하면 브라우져 넓이가 좁아지면 깨짐*/
+	width: 8510px; /*topMenu의 넓이를 850px로 설정(제대로 설정 안하면 브라우져 넓이가 좁아지면 깨짐*/
 	position : relative;
 	top:3%;
-	left : 3%;
+	left : 1%;
+	margin:0%;
+	padding:0%;
 	} 
 	
 	/* 메인 메뉴 내부 ul 설정: 상위메뉴의 ul+하위 메뉴의 ul */ 
@@ -88,7 +90,7 @@ a span:nth-child(1){
 	.menuLink, .submenuLink { 
 	text-decoration:none; /* a 태그의 꾸밈 효과 제거 */ 
 	display: block; /* a 태그의 클릭 범위를 넓힘 */ 
-	width: 200px; /* 기본 넓이를 150px로 설정 */ 
+	width: 205px; /* 기본 넓이를 150px로 설정 */ 
 	font-size: 15px; /* 폰트 사이즈 설정 */ 
 	font-weight: bold; /* 폰트를 굵게 설정 */ 
 	font-family: "Trebuchet MS", Dotum; /* 기본 폰트를 영어/한글 순서대로 설정 */ 
@@ -123,7 +125,7 @@ a span:nth-child(1){
 	height: 0px; /* 초기 높이는 0px로 설정 */ 
 	overflow: hidden; /* 실 내용이 높이보다 커지면 해당 내용 감춤 */ 
 	transition: height .2s; /* height를 변화 시켰을 때 0.2초간 변화 되도록 설정(기본) */ 
-	-webkit-transition: height .3s; /* height를 변화 시켰을 때 0.2초간 변화 되도록 설정(구버전 크롬/사파라ㅣ) */ 
+	-webkit-transition: height .3s; /* height를 변화 시켰을 때 0.2초간 변화 되도록 설정(구버전 크롬/사파리) */ 
 	-moz-transition: height .2s; /* height를 변화 시켰을 때 0.2초간 변화 되도록 설정(구버전 파폭) */ 
 	-o-transition: height .2s; /* height를 변화 시켰을 때 0.2초간 변화 되도록 설정(구버전 오페라) */ 
 	} 
@@ -189,7 +191,7 @@ a span:nth-child(1){
 	.indexLink { 
 	text-decoration:none; /* a 태그의 꾸밈 효과 제거 */ 
 	display: inline; /* a 태그의 클릭 범위를 넓힘 */ 
-	width: 200px; /* 기본 넓이를 150px로 설정 */ 
+	width: 205px; /* 기본 넓이를 150px로 설정 */ 
 	font-size: 15px; /* 폰트 사이즈 설정 */ 
 	font-weight: bold; /* 폰트를 굵게 설정 */ 
 	font-family: "Trebuchet MS", Dotum; /* 기본 폰트를 영어/한글 순서대로 설정 */ 
@@ -237,6 +239,10 @@ a span:nth-child(1){
 
 .rounded {
   background: rgb(63, 63, 63);
-  height: 50px; width: 200px;
+  height: 50px; width: 205px;
   border-radius: 10px;
+}
+
+hr{
+	width:98%;
 }
