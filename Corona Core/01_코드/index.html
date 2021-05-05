@@ -6,7 +6,13 @@
 	<meta name="author" content="tlwns5598@gmail.com" />
 	<title>Corona Core</title>
 	<link rel="stylesheet" href="style.css">
-
+        <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+        <script type="text/javascript">   
+        $(document).ready( function() {
+            $("#headers").load("./test.html");
+            $("#footers").load("./test.html");
+        });
+        </script>
 </head>
 
 
@@ -17,6 +23,11 @@
 
 <a style="display:scroll; position:fixed; left : 30px; bottom:10px;" href="#"><img src="../02_이미지/up_dark.png" style="width:40px; "></a>
 
+
+        <div id="headers"></div>
+        <div id="footers"></div>
+
+        
 <div class="mid">
 	<nav id="topMenu" >
 		<ul>
