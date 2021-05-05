@@ -63,7 +63,7 @@ a span:nth-child(1){
 	width: 850px; /*topMenu의 넓이를 850px로 설정(제대로 설정 안하면 브라우져 넓이가 좁아지면 깨짐*/
 	position : relative;
 	top:3%;
-	left : 1%;
+	left : 1.1%;
 	margin:0%;
 	padding:0%;
 	} 
@@ -244,5 +244,5 @@ a span:nth-child(1){
 }
 
 hr{
-	width:98%;
+	width:97.4%;
 }
