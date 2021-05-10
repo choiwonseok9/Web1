@@ -60,7 +60,7 @@ file.write('<div class="daydata">'+'<h1>'+'<p style ="color:rgb(255, 255, 255)">
 file.close()
 
 file = open('crawler/mini_corona.html', 'w')    # 누적확진자 Visual studio code의 경우 F1 > encoding >에서 korean으로 변경해야함
-file.write('<div class="daydata">'+'<h3>'+'<p style ="color:rgb(255, 255, 255)">'+str(mini)+'</p></h3>'+'</div>')
+file.write('<html lang="ko-KR"><head><meta charset="euc-kr"/></head>'+'<div class="daydata">'+'<h3>'+'<p style ="color:rgb(255, 255, 255)">'+str(mini)+'</p></h3>'+'</div>')
 file.close()
 
 file = open('crawler/dead_corona.html', 'w')    # 사망자
