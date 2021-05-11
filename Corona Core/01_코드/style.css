@@ -248,12 +248,3 @@ hr{
 }
 
 
-.scrollToTop{
-	width:40px;
-	height: 40px;
-	background-image: url('../02_이미지/up_dark.png');
-	position:fixed;
-	right:30px;
-	bottom:30px;
-	display:none;
-	}
