@@ -41,7 +41,7 @@ dead_today = data4[3].find('span',{'class':'before'}).text
 print("오늘 사망자",dead_today)
 
 #누적확진자 숫자만 추출하기위해
-result = [int(d) for d in re.findall(r'-?\d+', mini)]
+result = [int(d) for d in re.findall(r'-?\d+', mini)]   # -? : 음수, \d+ : 여러자리 숫자
 print(result[0],result[1])
 
 #file = open('hello.txt', 'w')    # hello.txt 파일을 쓰기 모드(w)로 열기. 파일 객체 반환
