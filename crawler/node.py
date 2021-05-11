@@ -1,7 +1,7 @@
 from bs4 import BeautifulSoup as bs
 import requests
 import csv
-
+import re
 # html로 작성된 웹페이지 코드를 반환
 # html언어 구조: <태그 속성=속성값> 텍스트 </태그>
 
@@ -40,6 +40,9 @@ print("사망자",dead)
 dead_today = data4[3].find('span',{'class':'before'}).text
 print("오늘 사망자",dead_today)
 
+#누적확진자 숫자만 추출하기위해
+result = [int(d) for d in re.findall(r'-?\d+', mini)]
+print(result[0],result[1])
 
 #file = open('hello.txt', 'w')    # hello.txt 파일을 쓰기 모드(w)로 열기. 파일 객체 반환
 #file.write(str(fine_dust)+","+str(ultra_fine_dust))      # 파일에 문자열 저장
@@ -60,7 +63,7 @@ file.write('<div class="daydata">'+'<h1>'+'<p style ="color:rgb(255, 255, 255)">
 file.close()
 
 file = open('crawler/mini_corona.html', 'w')    # 누적확진자 Visual studio code의 경우 F1 > encoding >에서 korean으로 변경해야함
-file.write('<html lang="ko-KR"><head><meta charset="euc-kr"/></head>'+'<div class="daydata">'+'<h3>'+'<p style ="color:rgb(255, 255, 255)">'+str(mini)+'</p></h3>'+'</div>')
+file.write('<div class="daydata">'+'<h1>'+'<p style ="color:rgb(255, 255, 255)">'+str(result[0])+','+str(result[1])+'</p></h1>'+'</div>')
 file.close()
 
 file = open('crawler/dead_corona.html', 'w')    # 사망자
