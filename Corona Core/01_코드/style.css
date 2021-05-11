@@ -57,6 +57,16 @@ a span:nth-child(1){
     font-size: 60px;
 	}
 
+	.main_title2{
+		position : relative;
+		padding-top: 3px;
+		height : 30px;
+		text-align : center;
+		font-family: "Times New Roman", Serif;
+		font-size: 30px;
+		color:rgb(255, 255, 255);
+		}
+
 	/*메인 메뉴*/
 	#topMenu { 
 	height: 15px; /*topMenu의 높이를 30px로 설정(제대로 설정 안하면 아래 내용이 깨짐*/
@@ -238,7 +248,7 @@ a span:nth-child(1){
 
 
 .rounded {
-  background: rgb(63, 63, 63);
+
   height: 50px; width: 205px;
   border-radius: 10px;
 }
